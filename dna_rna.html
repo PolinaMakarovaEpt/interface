@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DNAandRNA</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/dna_rna.css">
+</head>
+
+<body>
+    <script src="./js/dna_rna_DOM.js"></script>
+    <script src="./js/dna_rna_fun.js"></script>
+    <nav>
+        <div class="navbar">
+            <a class="nav-item" id="now" href="dna_rna.html">Конвертер ДНК и РНК</a>
+            <a class="nav-item" href="isPalindrome.html">Проверка на палиндром</a>
+            <a class="nav-item" href="substr.html">Выбор подстроки</a>
+            <a class="nav-item" href="todoList.html">Список дел</a>
+        </div>
+    </nav>
+
+    <div class="radio">
+        <label>
+            <input class="qwe" id='radio-dna' type="radio" name="radio" value="dna" onClick="inform()" checked>
+            ДНК
+        </label>
+        <label style="margin-left: 10px;">
+            <input class="qwe" id='radio-rna' type="radio" name="radio" value="rna" onClick="inform()">
+            РНК
+        </label>
+    </div>
+
+    <form onsubmit="return false">
+        <input id='top-block' type="text" name="DNA" size="40"
+            placeholder="Введите цепь ДНК, используя быквы G, C, T, A">
+        <button class='button' type="submit" onClick="interF()">Перевод</button><br>
+    </form>
+
+    <div class="result-block">
+        <span class="result" id="res" style="font-size: 30px;">Цепь РНК:</span>
+        <span class="result" id="result"></span>
+    </div>
+</body>
+
+</html>

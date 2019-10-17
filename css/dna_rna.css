@@ -1,0 +1,16 @@
+.radio {
+    position: relative;
+    left: 20px;
+    top: 80px;
+    font-size: 22px;
+}
+
+.qwe {
+    transform:scale(1.3);
+    opacity:0.9;
+    cursor:pointer;
+}
+
+#top-block {
+    margin: 90px auto;
+}

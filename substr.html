@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>substr</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/substr.css">
+</head>
+
+<body>
+    <script src="./js/substr_DOM.js"></script>
+    <script src="./js/substr_fun.js"></script>
+    <nav>
+        <div class="navbar">
+            <a class="nav-item" href="dna_rna.html">Конвертер ДНК и РНК</a>
+            <a class="nav-item" href="isPalindrome.html">Проверка на палиндром</a>
+            <a class="nav-item" id="now" href="substr.html">Выбор подстроки</a>
+            <a class="nav-item" href="todoList.html">Список дел</a>
+        </div>
+    </nav>
+
+    <form onsubmit="return false">
+        <input id='top-block' type="text" name="DNA" size="40" placeholder="Введите исходный текст">
+        <button class='button' type="submit" onClick="interF()">Подтвердить</button><br>
+        <input id="index-block" type="number" name="DNA" size="40" placeholder="Начальный индекс">
+        <input id="substr-block" type="number" name="DNA" size="40" placeholder="Длина подстроки">
+    </form>
+
+    <div class="result-block">
+        <span class="result" style="font-size: 30px;">Результат:</span>
+        <span class="result" id="result"></span>
+    </div>
+</body>
+
+</html>
