@@ -125,7 +125,7 @@ const prepareList = () => {
             bindTaskEvents(listItem, item.finished ? unfinishTask : finishTask);
         });
     }
-}
+} 
 
 prepareList();
 addButton.onclick = addTask;
